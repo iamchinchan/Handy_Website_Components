@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="carousel.css" rel="stylesheet" />
+    <title>Accordian Component</title>
+  </head>
+  <body>
+    <div class="carousel">
+      <img class="carousel-image" src="maria.jpg" alt="Maria de Almeida" />
+      <blockquote class="testimonial">
+        <p class="testimonial-text">
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+          obcaecati officiis atque qui amet, illum natus iusto incidunt,
+          laudantium quod itaque nisi fugit pariatur, perspiciatis dignissimos
+          earum asperiores est."
+        </p>
+        <p class="testimonial-author">Maria de Almeida</p>
+        <p class="testimonial-author-job">
+          Senior Product Manager at EDP Comercial
+        </p>
+      </blockquote>
+      <button class="carousel-btn carousel-btn--left">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6 carousel-btn-icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5L8.25 12l7.5-7.5"
+          />
+        </svg>
+      </button>
+      <button class="carousel-btn carousel-btn--right">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6 carousel-btn-icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M8.25 4.5l7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </button>
+      <div class="carousel-dots">
+        <button class="carousel-dot-slider carousel-dot-reading">&nbsp;</button>
+        <button class="carousel-dot-slider">&nbsp;</button>
+        <button class="carousel-dot-slider">&nbsp;</button>
+        <button class="carousel-dot-slider">&nbsp;</button>
+      </div>
+    </div>
+  </body>
+</html>

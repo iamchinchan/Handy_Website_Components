@@ -1,0 +1,115 @@
+/*
+    SPACING SYSTEM (px)
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+    FONT SIZE SYSTEM (px)
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/*  tale main color: #099268 */
+/*  tale main text color light: #e6fcf5 */
+/*  Main color: #087f5b */
+/*  tale main text color dark: #c3fae8 */
+/*  grey color for accordian numbers: #343a40 */
+/*  tale grey color: #ced4da*/
+/*  shaded grey color:  #212529*/
+/*  tale grey for button:hover: #f1f3f5 */
+/*  tale grey volor for readable text: #868e96 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #343a40;
+  line-height: 1;
+  background-color: #e6fcf5;
+}
+
+/* Carousel Styles */
+.carousel {
+  width: 50%;
+  background-color: #087f5b;
+  margin: 250px auto;
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  padding-left: 86px;
+  border-radius: 8px;
+  gap: 86px;
+  color: #e6fcf5;
+  /* color: #fff; */
+  position: relative;
+}
+.carousel-image {
+  height: 200px;
+  transform: scale(1.5);
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Carousel left and right buttons styling */
+.carousel-btn {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+.carousel-btn--left {
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+.carousel-btn--right {
+  right: 0;
+  transform: translate(50%, -50%);
+}
+.carousel-btn-icon {
+  width: 24px;
+  height: 24px;
+  stroke: #087f5b;
+  font-weight: bold;
+}
+
+/* Carousel Content/testimonial styling */
+.testimonial-text {
+  line-height: 1.5;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 32px;
+}
+.testimonial-author {
+  font-size: 14px;
+  font-weight: 450;
+  margin-bottom: 4px;
+  color: #c3fae8;
+}
+.testimonial-author-job {
+  font-size: 12px;
+  color: #c3fae8;
+}
+/* Carousel dots styling */
+.carousel-dots {
+  display: flex;
+  gap: 16px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 48px);
+}
+.carousel-dot-slider {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 2px solid #087f5b;
+}
+.carousel-dot-reading {
+  background-color: #087f5b;
+}
