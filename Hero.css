@@ -1,0 +1,81 @@
+/*
+    SPACING SYSTEM (px)
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+    FONT SIZE SYSTEM (px)
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  line-height: 1;
+  font-family: "Rubik", sans-serif;
+  color: #444;
+  /* background-color: cyan; */
+}
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 52px;
+  margin-bottom: 32px;
+  line-height: 1.05;
+}
+h2 {
+  font-size: 44px;
+  margin-bottom: 48px;
+}
+p {
+  line-height: 1.6;
+  font-size: 20px;
+  margin-bottom: 48px;
+}
+header {
+  color: #fff;
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(35, 35, 35, 0.55),
+      rgba(35, 35, 35, 0.55)
+    ),
+    url(hero.jpg);
+  background-size: cover;
+  margin-bottom: 96px;
+}
+.header-container {
+  width: 35%;
+  /* 35 bcz 70 is other container's wodth fropm its parent , so this one needs only 35 of total header which is exact half of header, now by -100% we can kinda align it left */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-100%, -50%);
+}
+.hero-btn:link,
+.hero-btn:visited {
+  text-decoration: none;
+  color: #fff;
+  background-color: #e67e22;
+  padding: 16px 32px;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600px;
+  border-radius: 9px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  font-weight: 700;
+  padding-top: 24px;
+}
+/* And selector: nav which also has class contaoner to give it priority over only container class */
+nav.container {
+  margin-bottom: 48px;
+}
+section {
+  /* padding: 96px 0; */
+  margin-bottom: 96px;
+}
